@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Assemblée – Checkout</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+  <script src="js/app2.js"></script>
+</head>
+<body>
+  <header class="wrap">
+      <h1>Assemblée</h1>
+  </header>
+  <!-- YOUR BAG SECTION -->
+  <main class="wrap">
+  <form action="http://localhost:3000/showForm" method="post" >
+    <article class = "yourBag">
+      <h2>Items in your bag</h2>
+      <!-- dress item -->
+      <div class = "item">
+        <img src="images/dress.png">
+        <label class="item-label">Size:
+          <input id="dress-label" type="text" name="dressSize" value="put size here" />
+        </label>
+        <br>
+        Quantity:
+        <input type="number" name="dress-amount" min="1" max="999">
+      </div>
+      <!-- BAG ITEM -->
+      <div class = "item">
+        <img src="images/blackbag.png">
+        <label class="item-label">Color:
+          <input id = "bag-label" type="text" name="bagColor" />
+        </label>
+        <br>
+        Quantity:
+        <input type="number" name="shoe-amount" min="1" max="999">
+      </div>
+      <!-- SHOE ITEM -->
+      <div class = "item">
+        <img src="images/blackheel.png">
+        <label class="item-label">Size:
+          <input id="shoe-label" type="text" name="shoeSize" />
+        </label>
+        <br>
+        Quantity:
+        <input type="number" name="bag-amount" min="1" max="999">
+      </div>
+    </article>
+    <!-- CHECKOUT INFO SECTION -->
+    <article class="checkout">
+      <h2>Checkout Info</h2>
+        <label class="checkout-label">Name:
+          <input type="text" name="Name">
+        </label>
+        <label class="checkout-label">Address:
+          <input type="text" name="Address">
+        </label class="checkout-label">
+        <label class="checkout-label">City/State:
+          <input type="text" name="City">
+        </label>
+        <label class="checkout-label">Card #:
+          <input type="text" name="Card Number">
+        </label>
+        <button class="order" type="submit">Place Order</button>
+     </article>
+    </form>
+  </main>
+</body>
+</html>

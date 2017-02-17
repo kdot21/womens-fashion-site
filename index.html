@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Assemblée</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+  <script src="app1.js"></script>
+</head>
+<body>
+  <header class="wrap">
+    <h1>Assemblée</h1>
+  </header>
+  <main class="wrap">
+      <!-- DRESS SECTION -->
+    <article class = "dress move">
+      <h2>The Dress</h2>
+        <img class="dress-img" src= "images/dress.png">
+    <form action="index2.html" method="get">
+        <select id="dress-size" name="dressSize">
+          <option value="XS" selected>XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+        <br>
+    </article>
+    <!-- BAG SECTION -->
+    <article class="bag move">
+      <h2>The Bag</h2>
+      <img class="bag-img" src="images/blackbag.png">
+      <input class="bag-color" type="radio" name="bagColor" value="black" checked> Black
+      <input class="bag-color" type="radio" name="bagColor" value="white"> White
+      <br>
+    </article>
+<!-- SHOE SECTION -->
+    <article class="shoe">
+      <h2>The Shoe</h2>
+      <img class= "shoe-img" src= "images/blackheel.png">
+      <select name="shoeSize">
+        <option value="5">5</option>
+        <option value="6" selected>6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </article>
+    <footer class ="wrap" >
+      <button type="submit" class="order">Checkout</button>
+    </footer>
+  </form>
+  </main>
+</body>
+</html>
